@@ -52,21 +52,21 @@ cityNameInput.addEventListener('input', () => {
 skylineDropdown.addEventListener('change', () => {
     skylineCount++;
     const Skyline = skylineDropdown.value;
-    skylineImgEl.src = `./assets/${Skyline}.jpg`;
+    skylineImgEl.src = `./assets/${Skyline}-Skyline.jpg`;
     displayCountText();
 });
 
 natureDropdown.addEventListener('change', () =>{
     natureCount++;
     const Nature = natureDropdown.value;
-    natureImgEl.src = `./assets/${Nature}.jpg`;
+    natureImgEl.src = `./assets/${Nature}-Nature.jpg`;
     displayCountText();
 });
 
 waterDropdown.addEventListener('change', () =>{
     waterCount++;
     const Water = waterDropdown.value;
-    waterImgEl.src = `./assets/${Water}.jpg`;
+    waterImgEl.src = `./assets/${Water}-Water.jpg`;
     displayCountText();
 });
 
