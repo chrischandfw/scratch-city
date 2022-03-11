@@ -50,16 +50,29 @@ cityNameInput.addEventListener('input', () => {
 });
 
 skylineDropdown.addEventListener('change', () => {
-	skylineCount++;
-})
+    skylineCount++;
+    const Skyline = skylineDropdown.value;
+    skylineImgEl.src = `./assets/${Skyline}.jpg`;
+    displayCountText();
+});
 
-natureDropdown.addEventListener('change', () {
-	natureCount++;
-})
+natureDropdown.addEventListener('change', () =>{
+    natureCount++;
+    const Nature = natureDropdown.value;
+    natureImgEl.src = `./assets/${Nature}.jpg`;
+    displayCountText();
+});
 
-waterDropdown.addEventListener('change', () {
-	waterCount++;
-})
+waterDropdown.addEventListener('change', () =>{
+    waterCount++;
+    const Water = waterDropdown.value;
+    waterImgEl.src = `./assets/${Water}.jpg`;
+    displayCountText();
+});
+
+function displayCountText() {
+    countMessageEl.textContent = `You changed the water ${waterCount} times, the skyline ${skylineCount} times and the nature ${natureCount} times`;
+}
   // get user input
   // use user input to update state 
   // update DOM to reflect the new state
