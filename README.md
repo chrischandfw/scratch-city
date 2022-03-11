@@ -24,3 +24,19 @@ Additional considerations:
   - What needs to live in a persistence layer?
 - Is there some state we need to initialize?
 - Ask: should any of this work be abstracted into functions? (i.e., is the work complicated? can it be resused?)
+
+##HTML Setup
+- Three dropdowns to show which image user selected using dropdown.addEventListener('change', () => {}) and dropdown.value to get selected image.
+
+- Three image tags to display images connected to dropdown value using waterImgEl.src = assets/water-${someId}
+
+- Input- User can type in a slogan using const slogan = myInput.value, myArray.push(slogan)
+
+- Button
+	Why? Submit a slogan
+	How? button.addEvenListener('click', () => {})
+- Div for slogans
+	Why? A place to hold/inject slogans
+	Use the display a list pattern from earlier
+- Div for counts
+	Why? A place to hold how many times each dropdown was used
