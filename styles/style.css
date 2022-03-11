@@ -89,3 +89,11 @@ footer {
     background-color: var(--color3);
     box-shadow: var(--shadow);
 }
+
+.city-images {
+	width: 100px;
+	display: grid;
+	grid-template-rows: 1fr 1fr 1fr;
+	flex-direction: column;
+}
+
