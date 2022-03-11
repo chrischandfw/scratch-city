@@ -25,6 +25,7 @@ Additional considerations:
 - Is there some state we need to initialize?
 - Ask: should any of this work be abstracted into functions? (i.e., is the work complicated? can it be resused?)
 
+!![wireframe](/assets/cityWireframe.png “wireframe for scratch city builder app”)
 ##HTML Setup
 - Three dropdowns to show which image user selected using dropdown.addEventListener('change', () => {}) and dropdown.value to get selected image.
 
