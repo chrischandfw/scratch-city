@@ -97,8 +97,8 @@ footer {
 }
 
 .city-images img {
-    width: 200px;
-    height: 150px;
+    width: 250px;
+    height: 200px;
 }
 
 section {
@@ -136,11 +136,19 @@ section {
 .main-section {
 	display: grid;
 	align-content: right;
-	grid-template-columns: 1fr 2fr 1fr 2fr 1fr 2fr;
+	grid-template-columns: 25fr 25fr 25fr 25fr 25fr 25fr;
 }
 
 .counts {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	vertical-align: baseline;
+}
+
+h1 {
 	display: block;
-	align-content: flex-start;
-	grid-template-columns: 1fr 1fr 1fr;
+	font-size: 3em;
+	margin-block-start: 2.83em;
+	margin-block-end: 2.83em;
 }
