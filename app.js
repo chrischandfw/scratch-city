@@ -49,7 +49,17 @@ cityNameInput.addEventListener('input', () => {
     cityNameEl.textContent = cityNameInput.value;
 });
 
+skylineDropdown.addEventListener('change', () => {
+	skylineCount++;
+})
 
+natureDropdown.addEventListener('change', () {
+	natureCount++;
+})
+
+waterDropdown.addEventListener('change', () {
+	waterCount++;
+})
   // get user input
   // use user input to update state 
   // update DOM to reflect the new state
