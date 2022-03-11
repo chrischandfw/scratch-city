@@ -20,7 +20,8 @@
     </header>
     <main>
         <section class="main-section">
-            <div class="city-images">
+            <div>
+			<div class="city-images">
 				<img id="skyline-img" src="assets/shenzhen-Skyline.jpg">
 				<img id="nature-img" src="assets/bali-Nature.jpg">
 				<img id="water-img" src="assets/thai-Water.jpg">
@@ -30,6 +31,43 @@
 				Young Lord, you must select your photos.
 			</div>
 
+			<div class ="welcome-to">
+				<h1>"Welcome to "<span id="city-name"></span>!</h1>
+			</div>
+			<div class = "user-inputs">
+				<div class="dropdowns">
+					<select id="skyline-dropdown">
+						<option value="1">Skyline One</option>
+						<option value="2">Skyline Two</option>
+						<option value="3">Skyline Three</option>
+					</select>
+					<select id="nature-dropdown">
+						<option value="1">Nature One</option>
+						<option value="2">Nature Two</option>
+						<option value="3">Nature Three</option>
+					</select>
+					<select id="water-dropdown">
+						<option value="1">Water One</option>
+						<option value="2">Water Two</option>
+						<option value="3">Water Three</option>
+					</select>
+			</div>
+
+			<div class="city-name-input-container">
+				City name:
+				<input id="city-name-input" />
+		</div>
+		<div class="slogan-input-container">
+				Slogan:
+				<input id="slogan-input" />
+			<button id="add-slogan-button">
+				Add slogan
+			</button>
+		</div>
+		<div class="slogan-list" id="list">
+			slogan list
+		</div>
+	</div>
 
         </section>
     </main>
