@@ -80,10 +80,6 @@ header img {
     height: var(--header-height);
 }
 
-p {
-    margin: var(--gutter);
-}
-  
 footer {
     position: fixed;
     width: 100%;
@@ -96,9 +92,14 @@ footer {
 }
 
 .city-images {
-	width: 100px;
+	height: 500px;
 	display: grid;
 	grid-template-rows: 1fr 1fr 1fr;
+}
+
+.city-images img {
+    width: 200px;
+    height: 150px;
 }
 
 .user-inputs {
@@ -106,4 +107,24 @@ footer {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
 	grid-template-rows: 1fr 1fr;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+.user-inputs > div {
+    height: 100%;
+    border: solid 1px black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.slogan {
+    background: pink;
+    margin: 5px;
+    width: 100%;
+    text-align: center;
 }
