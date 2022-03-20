@@ -78,7 +78,7 @@ header img {
 p {
     margin: var(--gutter);
 }
-  
+
 footer {
     position: fixed;
     width: 100%;
@@ -88,4 +88,67 @@ footer {
     justify-content: flex-end;
     background-color: var(--color3);
     box-shadow: var(--shadow);
+}
+
+.city-images {
+	height: 500px;
+	display: grid;
+	grid-template-rows: 1fr 1fr 1fr;
+}
+
+.city-images img {
+    width: 250px;
+    height: 200px;
+}
+
+section {
+    display: grid;
+    grid-template-columns: 1fr 1fr 2fr;
+}
+
+.user-inputs {
+	height: 100%;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 1fr 1fr;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+.user-inputs > div {
+    height: 100%;
+    border: solid 1px black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.slogan {
+    background: gold;
+    margin: 5px;
+    width: 100%;
+    text-align: center;
+}
+
+.main-section {
+	display: grid;
+	align-content: right;
+	grid-template-columns: 25fr 25fr 25fr 25fr 25fr 25fr;
+}
+
+.counts {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	vertical-align: baseline;
+}
+
+h1 {
+	display: block;
+	font-size: 3em;
+	margin-block-start: 2.83em;
+	margin-block-end: 2.83em;
 }
